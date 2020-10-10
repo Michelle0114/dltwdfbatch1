@@ -11,27 +11,33 @@
 			INV DATE:1/OCT/2020<br>
 			INV No:10102020<br>
 			Staff ID:WDF 1046<br>
-			Phone no:<a href="#">0123456</a>
+			Phone no:<a href="tel:0123345">0123456</a>
 		</p>
 		<hr/>
 		<center>
 		<table border="2">
 			<thead bgcolor="silver">
 			<tr>
+			<th colspan="6">Item List</th>
+			</tr>
+			<tr>
 				<th>No</th>
 				<th>Item</th>
 				<th>Quantity</th>
 				<th>Unit Price</th>
 				<th>Total</th>
+				<th>QC</th> <!-- Qualtity control -->
 			</tr>
 			</thead>
-			<tbody>
+			<tbody align="right">
 			<tr>
 				<td>1</td>
 				<td>Coffee</td>
 				<td>12</td>
 				<td>100</td>
 				<td>1,200</td>
+				<td rowspan="5">Passed</td>
+				<!-- Merging rows  -->
 			</tr>
 			<tr>
 				<td>2</td>
@@ -62,26 +68,19 @@
 				<td>500</td>
 			</tr>
 			</tbody>
-			<tfoot>
+			<tfoot align="right">
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>Sub Total : </td>
+			<!-- Colspan for merging the cells -->
+				<td colspan="4">Sub Total : </td>
 				<td>11,500</td>
+				<td rowspan="3"><center>Paid</center></td>
 			</tr>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>Tax (5%) : </td>
+				<td colspan ="4">Tax (5%) : </td>
 				<td>575</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>Grand Total (Ks.) :</td>
+				<td colspan="4">Grand Total (Ks.) :</td>
 				<td bgcolor="yellow">12,075</td>
 			</tr>
 			</tfoot>
@@ -91,7 +90,7 @@
 		<center>
 		<a href="http://www.google.com">www.google.com</a>
 		<br/>
-		<a href="#">mdymini@gmail.com</a>
+		<a href="mailto:mdymini@gmail.com">mdymini@gmail.com</a>
 
 		<br/>
 
